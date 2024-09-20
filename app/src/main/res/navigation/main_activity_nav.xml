@@ -12,7 +12,11 @@
         tools:layout="@layout/fragment_main_screen" >
         <action
             android:id="@+id/action_mainScreenFragment_to_gameScreenFragment"
-            app:destination="@id/gameScreenFragment" />
+            app:destination="@id/gameScreenFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
     </fragment>
     <fragment
         android:id="@+id/gameScreenFragment"
@@ -22,6 +26,10 @@
         <action
             android:id="@+id/action_gameScreenFragment_to_resultScreenFragment"
             app:destination="@id/resultScreenFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out"
             app:popUpTo="@id/gameScreenFragment"
             app:popUpToInclusive="true" />
     </fragment>
