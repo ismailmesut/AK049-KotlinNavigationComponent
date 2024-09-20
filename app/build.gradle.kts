@@ -7,6 +7,10 @@ android {
     namespace = "com.ismailmesutmujde.kotlinnavigationcomponent"
     compileSdk = 34
 
+    buildFeatures {
+        viewBinding = true
+    }
+
     defaultConfig {
         applicationId = "com.ismailmesutmujde.kotlinnavigationcomponent"
         minSdk = 24
