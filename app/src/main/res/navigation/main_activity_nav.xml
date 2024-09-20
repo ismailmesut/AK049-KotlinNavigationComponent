@@ -21,7 +21,9 @@
         tools:layout="@layout/fragment_game_screen" >
         <action
             android:id="@+id/action_gameScreenFragment_to_resultScreenFragment"
-            app:destination="@id/resultScreenFragment" />
+            app:destination="@id/resultScreenFragment"
+            app:popUpTo="@id/gameScreenFragment"
+            app:popUpToInclusive="true" />
     </fragment>
     <fragment
         android:id="@+id/resultScreenFragment"
