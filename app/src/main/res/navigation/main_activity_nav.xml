@@ -9,12 +9,20 @@
         android:id="@+id/mainScreenFragment"
         android:name="com.ismailmesutmujde.kotlinnavigationcomponent.MainScreenFragment"
         android:label="fragment_main_screen"
-        tools:layout="@layout/fragment_main_screen" />
+        tools:layout="@layout/fragment_main_screen" >
+        <action
+            android:id="@+id/action_mainScreenFragment_to_gameScreenFragment"
+            app:destination="@id/gameScreenFragment" />
+    </fragment>
     <fragment
         android:id="@+id/gameScreenFragment"
         android:name="com.ismailmesutmujde.kotlinnavigationcomponent.GameScreenFragment"
         android:label="fragment_game_screen"
-        tools:layout="@layout/fragment_game_screen" />
+        tools:layout="@layout/fragment_game_screen" >
+        <action
+            android:id="@+id/action_gameScreenFragment_to_resultScreenFragment"
+            app:destination="@id/resultScreenFragment" />
+    </fragment>
     <fragment
         android:id="@+id/resultScreenFragment"
         android:name="com.ismailmesutmujde.kotlinnavigationcomponent.ResultScreenFragment"

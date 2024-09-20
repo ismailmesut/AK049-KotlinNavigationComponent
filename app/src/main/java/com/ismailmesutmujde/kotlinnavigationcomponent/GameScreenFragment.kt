@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.Navigation
 import com.ismailmesutmujde.kotlinnavigationcomponent.databinding.FragmentGameScreenBinding
 
 
@@ -17,7 +18,7 @@ class GameScreenFragment : Fragment() {
         val view = bindingGameScreen.root
 
         bindingGameScreen.buttonFinish.setOnClickListener {
-
+            Navigation.findNavController(it).navigate(R.id.action_gameScreenFragment_to_resultScreenFragment)
         }
 
         return view
