@@ -18,7 +18,9 @@ class MainScreenFragment : Fragment() {
         val view = bindingMainScreen.root
 
         bindingMainScreen.buttonStart.setOnClickListener {
-            Navigation.findNavController(it).navigate(R.id.action_mainScreenFragment_to_gameScreenFragment)
+            val person = Persons(1, "mesut")
+            val transition = MainScreenFragmentDirections.actionMainScreenFragmentToGameScreenFragment("ismail", person,18, 1.78f, true)
+            Navigation.findNavController(it).navigate(transition)
         }
 
         return view

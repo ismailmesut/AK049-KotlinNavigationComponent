@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
+    id("androidx.navigation.safeargs.kotlin")
 }
 
 android {
@@ -38,6 +39,8 @@ android {
         jvmTarget = "1.8"
     }
 }
+
+
 
 dependencies {
 
